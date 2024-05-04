@@ -7,13 +7,22 @@ export default function Options({
 }) {
   return (
     <div>
-      <button className={css.raitingButtons} onClick={() => updateFeedback('good')}>
+      <button
+        className={css.raitingButtons}
+        onClick={() => updateFeedback('good')}
+      >
         Good
       </button>
-      <button className={css.raitingButtons} onClick={() => updateFeedback('neutral')}>
+      <button
+        className={css.raitingButtons}
+        onClick={() => updateFeedback('neutral')}
+      >
         Neutral
       </button>
-      <button className={css.raitingButtons} onClick={() => updateFeedback('bad')}>
+      <button
+        className={css.raitingButtons}
+        onClick={() => updateFeedback('bad')}
+      >
         Bad
       </button>
       {buttonWasClicked() ? (
