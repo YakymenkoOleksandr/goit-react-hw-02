@@ -33,7 +33,7 @@ export default function App() {
 
   const sumOfResponse = () => values.good + values.neutral + values.bad;
   const goodToBad = () =>
-    Math.round((values.good / (values.good + values.bad)) * 100);
+    Math.round(values.good / sumOfResponse() * 100);
 
   return (
     <div className={css.sectionBody}>
